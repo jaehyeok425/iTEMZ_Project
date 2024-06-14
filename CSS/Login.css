@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+.input-field {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.links {
+    margin-top: 20px;
+    color: #555;
+    display: flex;
+    justify-content: left;
+}
+.links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+}
+/* 이미지 hover 스타일 */
+nav #main_menu li a img {
+    transition: filter 0.3s ease; /* 부드러운 전환을 위해 */
+}
+nav #main_menu li a:hover img {
+    filter: brightness(0.7); /* 밝기 조절 */
+}

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+}
+.sidebar {
+    width: 200px;
+    border-right: 1px solid #ccc;
+    justify-content: center;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar li {
+    padding: 10px;
+}
+.main {
+    flex-grow: 1;
+    padding: 20px;
+}
+.summary {
+    display: flex;
+    /* justify-content: space-between; 필요하면 ㄱ*/
+    margin-bottom: 20px;
+}
+.summary div {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    border-style: double;
+    /* border-radius: 5px; 필요하면 쓰자*/
+    
+}
+.summary .sales-complete {
+    background-color: yellowgreen;
+    width: 300px;
+}
+.summary .purchase-complete {
+    background-color: yellowgreen;
+    width: 300px;
+}
+.summary .interest-product {
+    background-color: yellowgreen;
+    width: 300px;
+}
+.summary .settlement-amount {
+    background-color: yellowgreen;
+    width: 300px;
+}
+.summary .inventory-value {
+    background-color: yellowgreen;
+    width: 300px;
+}
+.summary div p {
+    margin: 5px 0;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    margin-right: 5px;
+    background-color: #f1f1f1;
+}
+.tab.active {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.tab-content {
+    display: none;
+}
+.tab-content.active {
+    display: block;
+}
+.items {
+    display: flex;
+    justify-content: space-around;
+}
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+}
+.item img {
+    /* max-width:100%; 기능 공부 다시 필요. 적용 안됌*/
+    width: 400px;
+}

@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.header h1 {
+    margin: 0;
+}
+.container {
+    padding: 20px;
+}
+.accordion {
+    /* 아코디언 버튼의 스타일을 정의
+     배경색, 텍스트 색상, 커서 모양,
+     패딩, 너비, 테두리, 텍스트 정렬,
+      글꼴 크기, 전환 효과, 마진을 설정 */
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1em;
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
+.accordion:after {
+    /* 아코디언 버튼의 화살표 아이콘 스타일 */
+    content: '\25BC'; 
+    font-size: 1.2em;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    /* 코디언 버튼이 활성화되었을 때의 화살표 아이콘 스타일 ex) 화살표 아래방향 */
+    content: "\25B2"; 
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border: 1px solid #007bff;
+    margin-bottom: 10px;
+}
+.panel p {
+    margin: 15px 0;
+}

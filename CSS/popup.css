@@ -1,0 +1,124 @@
+/*팝업창*/
+.popup-overlay { position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;}
+    
+.popup-content { width: 80%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: auto;
+    max-height: 90vh;}
+
+.close-btn { 
+position: absolute;
+right: 20px;
+background-color: #333;
+color: #fff;
+border: none;
+padding: 10px;
+cursor: pointer;
+font-size: 16px;
+margin: 0;
+}
+
+.header1 {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #333;
+color: #fff;
+padding: 10px 20px;
+position: relative;}
+
+.content1 {
+display: flex;
+justify-content: space-between;
+margin-top: 20px;}
+
+.item-image {
+width: 50%;}
+
+.item-image img {
+width: 100%;
+}
+
+.item-info {
+width: 45%;
+}
+
+.item-info h1 {
+font-size: 24px;
+}
+
+.item-info p {
+margin: 10px 0;
+}
+
+.item-info table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.item-info th, .item-info td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: center;
+}
+
+.item-info th {
+background-color: #f2f2f2;
+}
+
+.purchase-section {
+margin-top: 20px;
+}
+
+.purchase-section input {
+width: 50px;
+text-align: center;
+}
+
+.purchase-section button {
+background-color: red;
+color: white;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+font-size: 20px;
+}
+
+.purchase-section button:hover {
+background-color: darkred;
+}
+
+.transaction-history {
+margin-top: 20px;
+}
+
+.transaction-history table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.transaction-history th, .transaction-history td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: center;
+}
+
+.transaction-history th {
+background-color: #f2f2f2;
+}
+
+.parent-container{
+    display: flex;
+    align-items: center;
+}

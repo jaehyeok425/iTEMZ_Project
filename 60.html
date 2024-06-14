@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="ko">
+    <title>iTEMZ</title>
+    <link rel="stylesheet" href="CSS/Structure1.css">
+    <link rel="stylesheet" href="CSS/popup1.css">
+    <link rel="stylesheet" href="CSS/slide1.css">
+    <script src="JavaScript/Popup1.js"></script>
+    <script src="JavaScript/ButtonDCNEW.js"></script>
+    <script src="JavaScript/PeriodofUse.js"></script>
+
+
+    <style>
+       /*CSS FILE 참고*/
+    </style>
+
+</head>
+<!-- 보디시작-->
+
+<body>
+    <div class="navbar">
+        <div class="left-section">
+            <div class="logo">
+                <a href="iTEMZMAIN.html"><img src="img/Logo.PNG" alt="ITEMS Logo"></a>
+            </div>
+            <div class="menu">
+                <a href="#" class="active">구매</a>
+                <span>|</span>
+                <a href="#" class="inactive">판매</a>
+            </div>
+        </div>
+        <div class="icons">
+            <a href="ShoppingBasket.html"><img src="img/List1.PNG" alt="장바구니"></a>
+            <img id="alarm-image" src="img/Alarm1.jpg" alt="알람 이미지">
+            <div class="info-box" id="alarm-info">
+                <h2>알람 정보</h2>
+                <div class="notification">구매 완료 (2024.03.30 23:34)<br>에케 30일 구매가 완료</div>
+                <div class="notification">판매 완료 (2024.03.29 20:27)<br>꼬마 영구제 판매가 완료</div>
+                <div class="notification">판매 완료 (2024.03.29 02:12)<br>박보영 영구제 판매가 완료</div>
+                <div class="notification">구매 완료 (2024.03.24 01:19)<br>시그 360일 구매가 완료</div>
+                <div class="notification">구매 완료 (2024.03.08 05:43)<br>고사리 7일 구매가 완료</div>
+                <div class="notification">구매 완료 (2024.03.03 21:17)<br>장원영 150일 구매 완료</div>
+            </div>
+            <a href="index.html"><img src="img/Logout1.PNG" alt="로그아웃"></a>
+        </div>
+    </div>
+
+    <section id="main_img">
+    <!--배너(광고)-->
+    <div class="slidebox">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
+        <ul class="slidelist">
+            <li class="slideitem">
+                <a>
+                    <label for="slide03" class="prev"></label>
+                    <img src="./img/banner.png">
+                    <label for="slide02" class="next"></label>
+                </a>
+            </li>
+            <li class="slideitem">
+                <a>
+                    <label for="slide01" class="prev"></label>
+                    <img src="./img/banner2.png">
+                    <label for="slide03" class="next"></label>
+                </a>
+            </li>
+            <li class="slideitem">
+                <a>
+                    <label for="slide02" class="prev"></label>
+                    <img src="./img/banner3.png">
+                    <label for="slide01" class="next"></label>
+                </a>
+            </li>
+        </ul>
+    </div>
+    </section>
+
+    <div id="contents">
+        <!--카테고리(속성)-->
+        <nav id="sub_menu">
+            <h3>카테고리</h3>
+            <ul>
+                <li><a href="iTEMZMAIN.html">전체</li></a>
+                <li><a href="Weapon1.html">무기</li></a>
+                <li><a href="Character.html">캐릭터</li></a>
+            </ul>
+
+            <h4>필터</h4>
+            <ul>
+                <li><b>상품속성</b></li>
+                <li>
+                    <label><input type="checkbox" name="할인 중인 상품" value="할인 중인 상품"
+                        id="checkbox1" onclick="redirectToURL('checkbox1')"> 할인 중인 상품</label>
+                        
+                </li>
+                <li>
+                    <label><input type="checkbox" name="신상 모아보기" value="신상 모아보기"
+                        id="checkbox2" onclick="redirectToURL('checkbox2')"> 신상 모아보기</label>
+                </li>
+            </ul>
+
+            <h4>거래 가격</h4>
+            <ul>
+                <div class="style1">
+                <li><input type="search" placeholder="₩" style="width: 120px; height: 40px;"> ~ 
+                    <input type="search" placeholder="₩" style="width: 120px; height: 40px;"></li>
+                <li><input type="submit"value="적용" style="width: 180px; height: 40px;"></li>
+                </div>
+            </ul>
+
+            <h4>사용 기간</h4>
+            <div class="style1">
+            <ul>
+                <li><input type="button" value="영구제" onclick="navigateToPage1()" style="width: 110px; height: 40px;"> &nbsp;
+                    <input type="button" value="360일 이상" onclick="navigateToPage2()" style="width: 110px; height: 40px;"></li>
+
+                <li><input type="button" value="150일 이내" onclick="navigateToPage3()" style="width: 110px; height: 40px;"> &nbsp;
+                     <input type="button" value="90일 이내" onclick="navigateToPage4()" style="width: 110px; height: 40px;"></li>
+
+                <li><input type="button" value="60일 이내" onclick="navigateToPage5()" style="width: 110px; height: 40px;"> &nbsp; 
+                    <input type="button" value="7일 이내" onclick="navigateToPage6()" style="width: 110px; height: 40px;"></li>
+
+                <li><input type="button" value="3일" onclick="navigateToPage7()" style="width: 110px; height: 40px;"> &nbsp;
+                    <input type="button" value="1일" onclick="navigateToPage8()" style="width: 110px; height: 40px;"></li>
+            </div>
+            </ul>
+        </nav>
+
+
+        <!--아이템 컨텐츠-->
+        <div id="main_contents">
+            <h4><input type="search" placeholder="상품을 검색하세요" style="width: 400px; height: 40px; margin-left: 60px;">
+                <input type="submit"value="검색" style="width: 50px; height: 40px;"></h4>
+
+            <div class="item_schema">
+                <div class="item-card" onclick="openPopup('갱스터', 'img/Cyber.jpg', '갱스터 60일', '₩25,111')">
+                    <img src="img/Cyber.jpg" alt="갱스터">
+                    <h3>갱스터 60일</h3>
+                    <p>₩25,111</p>
+                </div>
+                <div class="item-card item" onclick="openPopup('디이글', 'img/D-Eagle.png', '디이글 60일', '₩14,000')">
+                    <img src="img/D-Eagle.png" alt="디이글">
+                    <h3>디이글 60일</h3>
+                    <p>₩14,000</p>
+                </div>
+                <div class="item-card item" onclick="openPopup('DRT', 'img/DRT.jpg', 'DRT 60일', '₩38,000')">
+                    <img src="img/DRT.jpg" alt="디알티">
+                    <h3>DRT 60일</h3>
+                    <p>₩38,000</p>
+                </div>
+            </div>
+            
+            <div class="item_schema">
+                <div class="item-card" onclick="openPopup('꼬마', 'img/Elf.gif', '꼬마 60일', '₩45,111')">
+                    <img src="img/Elf.gif" alt="갱스터">
+                    <h3>꼬마 60일</h3>
+                    <p>₩45,111</p>
+                </div>
+                <div class="item-card" onclick="openPopup('여제', 'img/Empress.jpg', '여제 60일', '₩44,600')">
+                    <img src="img/Empress.jpg" alt="여제">
+                    <h3>여제 60일</h3>
+                    <p>₩44,600</p>
+                </div>
+                <div class="item-card" onclick="openPopup('파마스', 'img/Famas.gif', '파마스 60일', '₩31,600')">
+                    <img src="img/Famas.gif" alt="파마스">
+                    <h3>파마스 60일</h3>
+                    <p>₩31,600</p>
+                </div>
+            </div>
+
+        <div class="item_schema">
+            <div class="item-card" onclick="openPopup('삼권', 'img/Glock.png', '삼권 60일', '₩54,400')">
+                <img src="img/Glock.PNG" alt="삼권">
+                <h3>삼권 60일</h3>
+                <p>₩54,400</p>
+            </div>
+            <div class="item-card" onclick="openPopup('GSR', 'img/GSR.gif', 'GSR 60일', '₩99,220')">
+                <img src="img/GSR.gif" alt="고사리">
+                <h3>GSR 60일</h3>
+                <p>₩99,220</p>
+            </div>
+            <div class="item-card" onclick="openPopup('핸드볼', 'img/Handball.png', '핸드볼 60일', '₩28,800')">
+                <img src="img/Handball.png" alt="핸드볼">
+                <h3>핸드볼 60일</h3>
+                <p>₩28,800</p>
+            </div>
+        </div>
+    </div>
+
+    <!--팝업창 내용-->
+    <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+            <div class="header1">
+                <h1 id="popup-title"></h1>
+                <button class="close-btn" onclick="closePopup()">X</button>
+            </div>
+            <div class="content1">
+                <div class="item-image">
+                    <img id="popup-image" src="" alt="">
+                </div>
+                <div class="item-info">
+                    <table>
+                        <h1 id="popup-title-info"></h1>
+                        <p id="popup-price"></p>
+                        <p id="popup-description">아이템 설명</p>
+                        <thead>
+                            <tr>
+                                <th colspan="2">거래 대기</th>
+                            
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>64,999</td></tr>
+                            <tr><td>1</td><td>62,920</td></tr>
+                            <tr><td>1</td><td>62,555</td></tr>
+                            <tr><td>1</td><td>59,500</td></tr>
+                            <tr><td>1</td><td>58,777</td></tr>
+                            <tr><td>1</td><td>50,555</td></tr>
+                            <tr><td>1</td><td>50,010</td></tr>
+                            <tr><td>1</td><td>13,900</td></tr>
+                            <tr><td>1</td><td>5,375</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="purchase-section">
+                <p>내 보유 SP: 3,668SP</p>
+                <p>내 보유수량: 0건</p>
+                <label for="price">구매가격:</label>
+                <input type="number" id="price-input" value="">
+                <button>구매</button>
+            </div>
+            <div class="transaction-history">
+                <h2>거래 내역</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>30일 시세</th>
+                            <th>시간</th>
+                            <th>거래 가격</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>57,999</td><td>02:47</td><td>58,200</td></tr>
+                        <tr><td>30일 최고가</td><td>24.05.19</td><td>56,950</td></tr>
+                        <tr><td>71,980</td><td>24.05.19</td><td>56,840</td></tr>
+                        <tr><td>50,232</td><td>24.05.19</td><td>50,010</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <script src="JavaScript/Alarm.js"></script>
+    <!-- footer 하단-->
+
+    <div class="clear"></div>
+
+    <div class="footer">
+        <div class="contact-info">
+            <div><strong>고객센터 02-1234-1234</strong></div>
+            <div>평일 7시 ~ 18시</div>
+            <div>팩스 02-5678-5678</div>
+            <div>대표이메일 bonging@incheon.com</div>
+            <div>사업제휴 Nam99@gymclub.com</div>
+        </div>
+        <div class="links">
+            <a href="#">인재채용</a>
+            <a href="#">에잇포스트</a>
+            <a href="#">기술블로그</a>
+        </div>
+        <div class="company-info">
+            <div>(주)iTEMZ</div>
+            <div>대표 최재혁 | 사업자 등록번호 123-45-67890 | 온라인투자연계금융업 2024-3</div>
+            <div>인천광역시 부평구 무네미로 448번길 56</div>
+            <div>
+                <a href="Introduction.html">회사소개</a> | 
+                <a href="Terms of UseC.html">이용약관</a> | 
+                <a href="Rules of use.html">이용규칙</a> | 
+                <a href="Directions.html">찾아오시는 길</a> 
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
