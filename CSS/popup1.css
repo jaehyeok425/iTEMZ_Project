@@ -79,10 +79,11 @@ background-color: #f2f2f2;
 
 .purchase-section {
 margin-top: 20px;
+float: right;
 }
 
 .purchase-section input {
-width: 50px;
+width: 100px;
 text-align: center;
 }
 
@@ -93,6 +94,8 @@ border: none;
 padding: 10px 20px;
 cursor: pointer;
 font-size: 20px;
+width: 130px;
+height: 50px;
 }
 
 .purchase-section button:hover {
